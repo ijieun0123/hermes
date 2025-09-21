@@ -1,0 +1,338 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+main {
+    .intro_section {
+        margin: 0;
+        padding: 378px 0 37px;
+        background: url("/img/intro_section_photo.png") no-repeat center/cover;
+
+        .container {
+            width: auto;
+
+            .text_box {
+                @include flex_column;
+                gap: 42px;
+                width: 76.944%;
+                padding: 15px 8.333% 15px 5.555%;
+                margin-left: auto;
+                background: rgba(255, 255, 255, 0.9);
+
+                .title_box {
+                    span {
+                        display: inline-block;
+                        padding-left: 10px;
+                        font-family: $font_family_english_title_btn;
+                        font-size: 14px;
+                        letter-spacing: 0.25em;
+                        color: $black;
+                    }
+                    h2 {
+                        font-family: $font_family_english_hero;
+                        font-size: 50px;
+                        color: $black;
+                    }
+                }
+                button {
+                    @include flex_column;
+                    gap: 5px;
+                    align-self: flex-end;
+                    letter-spacing: 0.15em;
+                    color: $black;
+
+                    .right_arrow {
+                        align-self: flex-end;
+                    }
+                }
+            }
+        }
+    }
+    .story_section {
+        position: relative;
+        margin: 0;
+
+        .brown_box {
+            position: absolute;
+            width: 100%;
+            height: 266px;
+            top: 0;
+            left: 0;
+            background: $brown;
+            z-index: 1;
+        }
+        .bg_photo {
+            position: absolute;
+            top: 111px;
+            right: 0%;
+            width: 91.388%;
+            height: 253px;
+            background: url("/img/story_section_photo.png") no-repeat
+                center/cover;
+            z-index: 2;
+        }
+        .container {
+            position: relative;
+            width: auto;
+
+            .artisanship {
+                position: absolute;
+                top: 70px;
+                right: 5.555%;
+                font-size: 50px;
+                font-family: $font_family_english_title_btn;
+                letter-spacing: -0.05em;
+                z-index: 3;
+                color: rgba(246, 241, 235, 0.7);
+                text-transform: uppercase;
+            }
+            .gray_box {
+                background: $light_gray;
+
+                .text_box {
+                    width: 82.222%;
+                    margin: 0 auto;
+                    padding: 395px 0 70px;
+
+                    .title {
+                    }
+                    .paragraph.paragraph1 {
+                        margin: 40px 0 20px;
+                    }
+                    .paragraph {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        .intro_section {
+            padding: 184px 0 311px;
+
+            .container {
+                width: 86.979%;
+
+                .text_box {
+                    gap: 110px;
+                    width: 51.646%;
+                    padding: 0;
+                    background: none;
+
+                    .title_box {
+                        span {
+                            padding-left: 25px;
+                            font-size: 20px;
+                            letter-spacing: 0.25em;
+                        }
+                        h2 {
+                            font-size: 80px;
+                            color: $black;
+                        }
+                    }
+                    button {
+                        gap: 15px;
+                        font-size: 20px;
+                        letter-spacing: 0.25em;
+
+                        .right_arrow {
+                        }
+                    }
+                }
+            }
+        }
+        .story_section {
+            .brown_box {
+                width: 77.213%;
+                height: 366px;
+                top: 0;
+                right: 0;
+                left: auto;
+            }
+            .bg_photo {
+                top: 166px;
+                right: auto;
+                left: 0;
+                width: 78.125%;
+                height: 410px;
+            }
+            .container {
+                .artisanship {
+                    top: 100px;
+                    right: 6.51%;
+                    font-size: 80px;
+                }
+                .gray_box {
+                    .text_box {
+                        width: 82.222%;
+                        margin: 0 auto;
+                        padding: 614px 0 100px;
+
+                        .title {
+                            font-size: 80px;
+                        }
+                        .paragraph.paragraph1 {
+                        }
+                        .paragraph {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        .intro_section {
+            position: relative;
+            padding: 411px 0 472px;
+            background: none;
+
+            .bg_photo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 83.203%;
+                height: 1069px;
+                background: url("/img/intro_section_photo.png") no-repeat
+                    center/cover;
+                z-index: 1;
+            }
+            .container {
+                width: 90.625%;
+
+                .text_box {
+                    position: relative;
+                    width: 42.089%;
+                    z-index: 2;
+
+                    .title_box {
+                        span {
+                            padding-left: 36px;
+                            font-size: 25px;
+                        }
+                        h2 {
+                            font-size: 100px;
+                        }
+                    }
+                    button {
+                        font-size: 25px;
+                        letter-spacing: 0.25em;
+
+                        .right_arrow {
+                        }
+                    }
+                }
+            }
+        }
+        .story_section {
+            .brown_box {
+                width: 79.882%;
+            }
+            .bg_photo {
+                top: 228px;
+                right: auto;
+                left: 12.695%;
+                width: 58.593%;
+            }
+            .container {
+                .artisanship {
+                    top: 150px;
+                    right: 13.671%;
+                    font-size: 100px;
+                }
+                .gray_box {
+                    .text_box {
+                        width: 55.664%;
+                        padding: 690px 0 150px 12.695%;
+                        margin: 0;
+
+                        .title {
+                        }
+                        .paragraph.paragraph1 {
+                            margin: 60px 0 30px;
+                        }
+                        .paragraph {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    main {
+        .intro_section {
+            padding: 410px 0 416px;
+
+            .bg_photo {
+                width: 68.125%; // 1308px
+                height: 1093px;
+            }
+            .container {
+                width: 1396px;
+
+                .text_box {
+                    width: 765px;
+
+                    .title_box {
+                        span {
+                            padding-left: 50px;
+                        }
+                        h2 {
+                            font-size: 150px;
+                        }
+                    }
+                    button {
+                        .right_arrow {
+                        }
+                    }
+                }
+            }
+        }
+        .story_section {
+            .brown_box {
+                left: 0;
+                right: auto;
+                width: 38.229%;
+                height: 910px;
+            }
+            .bg_photo {
+                top: 180px;
+                right: auto;
+                left: 24.218%;
+                width: 530px;
+                height: 670px;
+            }
+            .container {
+                .artisanship {
+                    top: 463px;
+                    right: auto;
+                    left: 0.645%;
+                    transform: rotate(-90deg);
+                }
+                .gray_box {
+                    position: absolute;
+                    right: 0;
+                    width: 61.77%;
+
+                    .text_box {
+                        width: 76.728%;
+                        padding: 316px 0 233px 28.667%;
+                        margin: 0;
+
+                        .title {
+                        }
+                        .paragraph.paragraph1 {
+                        }
+                        .paragraph {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

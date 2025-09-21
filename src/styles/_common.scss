@@ -20,6 +20,7 @@
     letter-spacing: $letter_spacing_paragraph;
     font-weight: $font_weight_regular;
     color: $black;
+    word-break: keep-all;
 
     @media (min-width: 768px) {
         font-size: $font_size_paragraph;
