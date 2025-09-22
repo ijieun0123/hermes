@@ -27,13 +27,13 @@ main {
                         letter-spacing: 0.25em;
                         color: $black;
                     }
-                    h2 {
+                    h3 {
                         font-family: $font_family_english_hero;
                         font-size: 50px;
                         color: $black;
                     }
                 }
-                button {
+                .get_started_btn {
                     @include flex_column;
                     gap: 5px;
                     align-self: flex-end;
@@ -52,11 +52,8 @@ main {
         margin: 0;
 
         .brown_box {
-            position: absolute;
             width: 100%;
             height: 266px;
-            top: 0;
-            left: 0;
             background: $brown;
             z-index: 1;
         }
@@ -70,36 +67,250 @@ main {
                 center/cover;
             z-index: 2;
         }
+        position: relative;
+        width: auto;
+
+        .artisanship {
+            position: absolute;
+            top: 70px;
+            right: 5.555%;
+            font-size: 50px;
+            font-family: $font_family_english_title_btn;
+            letter-spacing: -0.05em;
+            z-index: 3;
+            color: rgba(246, 241, 235, 0.7);
+            text-transform: uppercase;
+        }
+        .gray_box {
+            background: $light_gray;
+
+            .text_box {
+                width: 82.222%;
+                margin: 0 auto;
+                padding: 130px 0 70px;
+
+                .title {
+                }
+                .paragraph.paragraph1 {
+                    margin: 40px 0 20px;
+                }
+                .paragraph {
+                }
+            }
+        }
+    }
+    .collections_section {
+        display: none;
+        .container {
+            .title_box {
+                .line.before {
+                }
+                .title {
+                }
+                .line.after {
+                }
+            }
+            .swiper {
+            }
+        }
+    }
+    .introduce_section {
+        .container {
+            .title_box {
+                .line.before {
+                }
+                .title {
+                }
+                .line.after {
+                }
+            }
+            .img_text_box {
+                @include flex_column;
+                gap: 100px;
+
+                // 공통
+                > div {
+                    @include flex_column;
+                    gap: 20px;
+
+                    .img_box {
+                        .bg_photo {
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                    .text_box {
+                        .caption {
+                            font-size: 14px;
+                            font-family: $font_family_korean_caption;
+                            letter-spacing: -0.03em;
+                            color: $black;
+                        }
+                        .title {
+                            color: $brown;
+                            margin-bottom: 15px;
+                        }
+                        .paragraph {
+                            color: $black;
+                        }
+                    }
+                }
+                .entrepreneurship_box {
+                    .img_box {
+                        .bg_photo.first {
+                            display: none;
+                        }
+                        .bg_photo.second {
+                            background: url("/img/introduce_section_entrepreneurship_2.png")
+                                no-repeat center/cover;
+                        }
+                        .bg_photo.third {
+                            display: none;
+                        }
+                    }
+                    .text_box {
+                        text-align: right;
+
+                        .caption {
+                        }
+                        .title {
+                        }
+                        .paragraph {
+                        }
+                    }
+                }
+                .freedom_box {
+                    .text_box {
+                        .caption {
+                        }
+                        .title {
+                        }
+                        .paragraph {
+                        }
+                    }
+                    .img_box {
+                        .bg_photo {
+                            background: url("/img/introduce_section_freedom.png")
+                                no-repeat center/cover;
+                        }
+                    }
+                }
+                .brand_box {
+                    .img_box {
+                        .bg_photo {
+                            background: url("/img/introduce_section_brand.png")
+                                no-repeat center/cover;
+                        }
+                    }
+                    .text_box {
+                        .caption {
+                        }
+                        .title {
+                        }
+                        .paragraph {
+                        }
+                    }
+                }
+                .network {
+                    .text_box {
+                        text-align: right;
+
+                        .caption {
+                        }
+                        .title {
+                        }
+                        .paragraph {
+                        }
+                    }
+                    .img_box {
+                        .bg_photo {
+                            background: url("/img/introduce_section_network.png")
+                                no-repeat center/cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .heart_section {
+        width: 100%;
+        height: 770px;
+        background: $black;
+
         .container {
             position: relative;
-            width: auto;
+            height: 100%;
 
-            .artisanship {
+            .hermes {
                 position: absolute;
                 top: 70px;
-                right: 5.555%;
-                font-size: 50px;
-                font-family: $font_family_english_title_btn;
-                letter-spacing: -0.05em;
-                z-index: 3;
-                color: rgba(246, 241, 235, 0.7);
-                text-transform: uppercase;
+                right: 0;
+                font-size: 100px;
+                font-family: $font_family_english_script;
+                color: $brown;
+                letter-spacing: -0.03em;
+                z-index: 2;
             }
-            .gray_box {
-                background: $light_gray;
+            .created_by_the_heart {
+                display: none;
+            }
+            p {
+                position: absolute;
+                left: 0;
+                bottom: 70px;
+                font-family: $font_family_korean;
+                font-weight: $font_weight_bold;
+                font-size: 18px;
+                color: $ivory;
+                line-height: 1.333rem;
+            }
+            .bg_box {
+                .bg_photo_woman {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    height: 380px;
+                    background: url("/img/heart_section_photo_1.png") no-repeat
+                        center/cover;
+                }
+                .bg_photo_man {
+                }
+            }
+        }
+    }
+    .development_section {
+        .container {
+            text-align: center;
+            color: $black;
 
-                .text_box {
-                    width: 82.222%;
-                    margin: 0 auto;
-                    padding: 395px 0 70px;
+            .title_box {
+                margin-bottom: 0;
 
-                    .title {
-                    }
-                    .paragraph.paragraph1 {
-                        margin: 40px 0 20px;
-                    }
-                    .paragraph {
-                    }
+                span {
+                    font-family: $font_family_english_title_btn;
+                    font-size: 40px;
+                    letter-spacing: -0.05em;
+                }
+                .title {
+                    margin: 5px 0 15px;
+                    font-family: $font_family_english_script;
+                    font-size: 60px;
+                    color: $brown;
+                }
+            }
+            .text_box {
+                b {
+                    font-family: $font_family_korean;
+                    font-size: 20px;
+                    font-weight: $font_weight_bold;
+                    letter-spacing: -0.06em;
+                }
+                .paragraph {
+                    margin: 30px 0 50px;
+                }
+                a.more_btn {
                 }
             }
         }
@@ -126,12 +337,12 @@ main {
                             font-size: 20px;
                             letter-spacing: 0.25em;
                         }
-                        h2 {
+                        h3 {
                             font-size: 80px;
                             color: $black;
                         }
                     }
-                    button {
+                    .get_started_btn {
                         gap: 15px;
                         font-size: 20px;
                         letter-spacing: 0.25em;
@@ -143,12 +354,12 @@ main {
             }
         }
         .story_section {
+            background: $light_gray;
+
             .brown_box {
                 width: 77.213%;
                 height: 366px;
-                top: 0;
-                right: 0;
-                left: auto;
+                margin-left: auto;
             }
             .bg_photo {
                 top: 166px;
@@ -157,25 +368,216 @@ main {
                 width: 78.125%;
                 height: 410px;
             }
-            .container {
-                .artisanship {
-                    top: 100px;
-                    right: 6.51%;
-                    font-size: 80px;
-                }
-                .gray_box {
-                    .text_box {
-                        width: 82.222%;
-                        margin: 0 auto;
-                        padding: 614px 0 100px;
+            .artisanship {
+                top: 100px;
+                right: 6.51%;
+                font-size: 80px;
+            }
+            .gray_box {
+                .text_box {
+                    width: 82.222%;
+                    margin: 0 auto;
+                    padding: 270px 0 100px;
 
-                        .title {
-                            font-size: 80px;
+                    .title {
+                        font-size: 80px;
+                    }
+                    .paragraph.paragraph1 {
+                    }
+                    .paragraph {
+                    }
+                }
+            }
+        }
+        // collections_section
+        .introduce_section {
+            .container {
+                .title_box {
+                    .line.before {
+                    }
+                    .title {
+                    }
+                    .line.after {
+                    }
+                }
+                .img_text_box {
+                    gap: 150px;
+
+                    // 공통
+                    > div {
+                        gap: 40px;
+
+                        .img_box {
+                            .bg_photo {
+                                height: 360px;
+                            }
                         }
-                        .paragraph.paragraph1 {
+                        .text_box {
+                            .caption {
+                                font-size: 16px;
+                            }
+                            .title {
+                                margin-top: 12px;
+                                margin-bottom: 30px;
+                            }
+                            .paragraph {
+                            }
                         }
-                        .paragraph {
+                    }
+                    .entrepreneurship_box {
+                        .img_box {
+                            .bg_photo.first {
+                                display: block;
+                                width: 65.868%;
+                                background: url("/img/introduce_section_entrepreneurship_1.png")
+                                    no-repeat center/cover;
+                            }
+                            .bg_photo.second {
+                                width: 73.353%;
+                                height: 336px;
+                                margin-left: 12.239%;
+                                margin-top: -150px;
+                            }
+                            .bg_photo.third {
+                            }
                         }
+                        .text_box {
+                            width: 87.125%;
+
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                    }
+                    .freedom_box {
+                        width: 87.125%;
+                        margin-left: auto;
+
+                        .text_box {
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                        .img_box {
+                            .bg_photo {
+                                background: url("/img/introduce_section_freedom.png")
+                                    no-repeat center/cover;
+                            }
+                        }
+                    }
+                    .brand_box {
+                        .img_box {
+                            .bg_photo {
+                                width: 87.125%;
+                                background: url("/img/introduce_section_brand.png")
+                                    no-repeat center/cover;
+                            }
+                        }
+                        .text_box {
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                    }
+                    .network {
+                        .text_box {
+                            text-align: right;
+
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                        .img_box {
+                            .bg_photo {
+                                background: url("/img/introduce_section_network.png")
+                                    no-repeat center/cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .heart_section {
+            height: 890px;
+
+            .container {
+                .hermes {
+                    top: 85px;
+                    font-size: 150px;
+                }
+                .created_by_the_heart {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: block;
+                    color: rgba(246, 241, 235, 0.8);
+                    font-size: 60px;
+                    font-family: $font_family_english_title_btn;
+                    letter-spacing: -0.05em;
+                }
+                p {
+                    left: 0;
+                    bottom: 110px;
+                    z-index: 2;
+                }
+                .bg_box {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: translate(-50%, -50%);
+                    width: 87.179%;
+
+                    .bg_photo_woman {
+                        position: static;
+                        width: 51.358%;
+                        height: 467px;
+                        transform: translate(0);
+                    }
+                    .bg_photo_man {
+                        display: block;
+                        width: 48.681%;
+                        height: 366px;
+                        background: url("/img/heart_section_photo_2.png")
+                            no-repeat center/cover;
+                    }
+                }
+            }
+        }
+        .development_section {
+            .container {
+                .title_box {
+                    span {
+                        font-size: 80px;
+                    }
+                    .title {
+                        margin: 0;
+                        font-size: 120px;
+                    }
+                }
+                .text_box {
+                    b {
+                        font-size: 25px;
+                    }
+                    .paragraph {
+                        margin: 35px 0 50px;
+                    }
+                    a.more_btn {
                     }
                 }
             }
@@ -213,11 +615,11 @@ main {
                             padding-left: 36px;
                             font-size: 25px;
                         }
-                        h2 {
+                        h3 {
                             font-size: 100px;
                         }
                     }
-                    button {
+                    .get_started_btn {
                         font-size: 25px;
                         letter-spacing: 0.25em;
 
@@ -228,8 +630,12 @@ main {
             }
         }
         .story_section {
+            display: flex;
+
             .brown_box {
                 width: 79.882%;
+                margin-right: auto;
+                margin-left: 0;
             }
             .bg_photo {
                 top: 228px;
@@ -237,25 +643,201 @@ main {
                 left: 12.695%;
                 width: 58.593%;
             }
-            .container {
-                .artisanship {
-                    top: 150px;
-                    right: 13.671%;
-                    font-size: 100px;
-                }
-                .gray_box {
-                    .text_box {
-                        width: 55.664%;
-                        padding: 690px 0 150px 12.695%;
-                        margin: 0;
+            .artisanship {
+                top: 150px;
+                right: 13.671%;
+                font-size: 100px;
+            }
+            .gray_box {
+                .text_box {
+                    width: 55.664%;
+                    padding: 350px 0 150px 12.695%;
+                    margin: 0;
 
-                        .title {
+                    .title {
+                    }
+                    .paragraph.paragraph1 {
+                        margin: 60px 0 30px;
+                    }
+                    .paragraph {
+                    }
+                }
+            }
+        }
+        // collections_section
+        .introduce_section {
+            .container {
+                .title_box {
+                    .line.before {
+                    }
+                    .title {
+                    }
+                    .line.after {
+                    }
+                }
+                .img_text_box {
+                    gap: 100px;
+
+                    // 공통
+                    > div {
+                        flex-direction: row;
+                        gap: 30px;
+
+                        .img_box {
+                            .bg_photo {
+                            }
                         }
-                        .paragraph.paragraph1 {
-                            margin: 60px 0 30px;
+                        .text_box {
+                            .caption {
+                            }
+                            .title {
+                                margin-top: 20px;
+                                margin-bottom: 40px;
+                            }
+                            .paragraph {
+                            }
                         }
-                        .paragraph {
+                    }
+                    .entrepreneurship_box {
+                        .img_box {
+                            width: 51.077%;
+
+                            .bg_photo.first {
+                                width: 92.827%;
+                                height: 360px;
+                            }
+                            .bg_photo.second {
+                                width: 73.206%;
+                                height: 410px;
+                                margin-left: auto;
+                                margin-top: -60px;
+                            }
+                            .bg_photo.third {
+                            }
                         }
+                        .text_box {
+                            width: auto;
+                            margin-top: 203px;
+
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                    }
+                    .freedom_box {
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 100%;
+                        margin-left: auto;
+
+                        .text_box {
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                        .img_box {
+                            width: 48.922%;
+                            .bg_photo {
+                                width: 100%;
+                                height: 454px;
+                            }
+                        }
+                    }
+                    .brand_box {
+                        .img_box {
+                            width: 48.922%;
+                            .bg_photo {
+                                width: 100%;
+                                height: 480px;
+                            }
+                        }
+                        .text_box {
+                            margin-top: 80px;
+
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                    }
+                    .network {
+                        justify-content: flex-end;
+
+                        .text_box {
+                            margin-top: 67px;
+
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                        .img_box {
+                            width: 48.922%;
+
+                            .bg_photo {
+                                width: 100%;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .heart_section {
+            .container {
+                .hermes {
+                    top: 25px;
+                    font-size: 200px;
+                }
+                .created_by_the_heart {
+                    font-size: 80px;
+                }
+                p {
+                    left: 8.512%;
+                }
+                .bg_box {
+                    width: 70.258%;
+
+                    .bg_photo_woman {
+                        width: 57.515%;
+                        height: 512px;
+                    }
+                    .bg_photo_man {
+                        width: 42.484%;
+                        height: 392px;
+                    }
+                }
+            }
+        }
+        .development_section {
+            .container {
+                .title_box {
+                    span {
+                        font-size: 100px;
+                    }
+                    .title {
+                        margin-top: -15px;
+                        margin-bottom: 20px;
+                        font-size: 120px;
+                    }
+                }
+                .text_box {
+                    b {
+                    }
+                    .paragraph {
+                        margin: 45px 0 70px;
+                    }
+                    a.more_btn {
                     }
                 }
             }
@@ -282,11 +864,11 @@ main {
                         span {
                             padding-left: 50px;
                         }
-                        h2 {
+                        h3 {
                             font-size: 150px;
                         }
                     }
-                    button {
+                    .get_started_btn {
                         .right_arrow {
                         }
                     }
@@ -307,29 +889,209 @@ main {
                 width: 530px;
                 height: 670px;
             }
-            .container {
-                .artisanship {
-                    top: 463px;
-                    right: auto;
-                    left: 0.645%;
-                    transform: rotate(-90deg);
+            .artisanship {
+                top: 463px;
+                right: auto;
+                left: 0.645%;
+                transform: rotate(-90deg);
+            }
+            .gray_box {
+                position: absolute;
+                right: 0;
+                width: 61.77%;
+
+                .text_box {
+                    width: 76.728%;
+                    padding: 316px 0 233px 28.667%;
+                    margin: 0;
+
+                    .title {
+                    }
+                    .paragraph.paragraph1 {
+                    }
+                    .paragraph {
+                    }
                 }
-                .gray_box {
-                    position: absolute;
-                    right: 0;
-                    width: 61.77%;
+            }
+        }
+        // collections_section
+        .introduce_section {
+            .container {
+                .title_box {
+                    .line.before {
+                    }
+                    .title {
+                    }
+                    .line.after {
+                    }
+                }
+                .img_text_box {
+                    gap: 60px;
 
-                    .text_box {
-                        width: 76.728%;
-                        padding: 316px 0 233px 28.667%;
-                        margin: 0;
+                    // 공통
+                    > div {
+                        .img_box {
+                            .bg_photo {
+                            }
+                        }
+                        .text_box {
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                    }
+                    .entrepreneurship_box {
+                        .img_box {
+                            width: 806px;
 
-                        .title {
+                            .bg_photo.first {
+                                width: 472px;
+                                height: 397px;
+                            }
+                            .bg_photo.second {
+                                width: 392px;
+                                height: 420px;
+                                margin-left: auto;
+                                margin-top: -270px;
+                                background: url("/img/introduce_section_entrepreneurship_3.png")
+                                    no-repeat center/cover;
+                            }
+                            .bg_photo.third {
+                                display: block;
+                                width: 436px;
+                                height: 336px;
+                                margin-top: -250px;
+                                margin-left: 100px;
+                                background: url("/img/introduce_section_entrepreneurship_2.png")
+                                    no-repeat center/cover;
+                            }
                         }
-                        .paragraph.paragraph1 {
+                        .text_box {
+                            margin-top: 193px;
+                            margin-left: auto;
+
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
                         }
-                        .paragraph {
+                    }
+                    .freedom_box {
+                        gap: 184px;
+
+                        .text_box {
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
                         }
+                        .img_box {
+                            width: 570px;
+                            .bg_photo {
+                                width: 100%;
+                                height: 570px;
+                            }
+                        }
+                    }
+                    .brand_box {
+                        gap: 137px;
+
+                        .img_box {
+                            width: 570px;
+                            .bg_photo {
+                                width: 100%;
+                                height: 480px;
+                            }
+                        }
+                        .text_box {
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                    }
+                    .network {
+                        gap: 139px;
+
+                        .text_box {
+                            margin-top: 263px;
+
+                            .caption {
+                            }
+                            .title {
+                            }
+                            .paragraph {
+                            }
+                        }
+                        .img_box {
+                            width: 686px;
+
+                            .bg_photo {
+                                width: 100%;
+                                height: 518px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .heart_section {
+            height: 890px;
+
+            .container {
+                .hermes {
+                    top: 70px;
+                }
+                .created_by_the_heart {
+                    font-size: 120px;
+                }
+                p {
+                    left: 118px;
+                    bottom: 150px;
+                }
+                .bg_box {
+                    width: auto;
+
+                    .bg_photo_woman {
+                        width: 488px;
+                        height: 666px;
+                    }
+                    .bg_photo_man {
+                        width: 362px;
+                        height: 510px;
+                    }
+                }
+            }
+        }
+        .development_section {
+            .container {
+                .title_box {
+                    flex-direction: column;
+                    gap: 0;
+
+                    span {
+                    }
+                    .title {
+                        margin-top: -15px;
+                        margin-bottom: 25px;
+                    }
+                }
+                .text_box {
+                    b {
+                    }
+                    .paragraph {
+                        margin: 45px 0 70px;
+                    }
+                    a.more_btn {
                     }
                 }
             }

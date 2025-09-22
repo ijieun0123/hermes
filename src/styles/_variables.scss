@@ -1,8 +1,8 @@
-// alex brush, gfs didot, graduate, nanum myeongjo 폰트
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=GFS+Didot&family=Graduate&family=Nanum+Myeongjo&display=swap");
+// alex brush, gfs didot, graduate, nanum myeongjo, nanum gothic 폰트
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=GFS+Didot&family=Graduate&family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap");
 
 // color palette
-$black: #003b4c;
+$black: #222;
 $ivory: #f6f1eb;
 $light_gray: #f5f5f5;
 $brown: #ba4c27;
@@ -18,6 +18,7 @@ $white: rgba(255, 255, 255, 0.9);
 
 // font family
 $font_family_korean: "Nanum Myeongjo", serif;
+$font_family_korean_caption: "Nanum Gothic", sans-serif;
 $font_family_english_title_btn: "GFS Didot", serif;
 $font_family_english_hero: "Graduate", serif;
 $font_family_english_script: "Alex Brush", cursive;
@@ -38,8 +39,8 @@ $line_height_paragraph: 1.33;
 $line_height_mobile_paragraph: 1.38;
 
 // letter spacing
-$letter_spacing_section_title: -0.05em;
-$letter_spacing_paragraph: -0.03em;
+$letter_spacing_section_title: -0.06em;
+$letter_spacing_paragraph: -0.04em;
 $letter_spacing_caption: -0.03em;
 
 // font weight
