@@ -1,6 +1,7 @@
 import "./_Homes.scss";
 import Arrow from "../../components/Arrow";
 import MoreBtn from "../../components/Button/MoreBtn";
+import ProductSwiper from "../../components/Swiper/ProductSwiper";
 
 const Home = () => {
     return (
@@ -210,24 +211,17 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <div className="product_section">
-                <div className="title_box">
-                    <span className="line"></span>
-                    <h2 className="title"></h2>
-                    <span className="line"></span>
+            <section className="product_section">
+                <div className="container">
+                    <div className="title_box">
+                        <span className="line"></span>
+                        <h2 className="title">PRODUCT</h2>
+                        <span className="line"></span>
+                    </div>
+                    <ProductSwiper />
+                    <MoreBtn children="View More" />
                 </div>
-                <ul className="product_box">
-                    <li>
-                        <a href="#">
-                            <div className="bg_photo"></div>
-                            <p></p>
-                        </a>
-                    </li>
-                </ul>
-                <a href="#" className="more_btn">
-                    View More
-                </a>
-            </div>
+            </section>
         </main>
     );
 };
