@@ -10,9 +10,6 @@ const SlideItem = styled.a`
     display: inline-block;
     width: 100%;
     height: 334px;
-
-    @media (min-width: 768px) {
-    }
 `;
 
 const ProductImg = styled.div<{ $imageSrc: string }>`
