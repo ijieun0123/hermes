@@ -2,6 +2,7 @@ import "./_Homes.scss";
 import Arrow from "../../components/Arrow";
 import MoreBtn from "../../components/Button/MoreBtn";
 import ProductSwiper from "../../components/Swiper/ProductSwiper";
+import CollectionsSwiper from "../../components/Swiper/CollectionsSwiper";
 
 const Home = () => {
     return (
@@ -55,21 +56,7 @@ const Home = () => {
                         <h2 className="title">COLLECTIONS</h2>
                         <span className="line after"></span>
                     </div>
-                    <div className="swiper">
-                        <div className="swiper_wraper">
-                            <div className="slider">
-                                <div className="slide">
-                                    <div className="bg_photo"></div>
-                                    <h3>벨트가 만드는 곡선</h3>
-                                    <p>
-                                        벨트는 가벼운 굴레처럼 도시적인 스타일을
-                                        연출합니다.
-                                    </p>
-                                    <a href="#">앙상블 마스터하기</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <CollectionsSwiper />
                 </div>
             </section>
             <section className="introduce_section">
@@ -214,9 +201,9 @@ const Home = () => {
             <section className="product_section">
                 <div className="container">
                     <div className="title_box">
-                        <span className="line"></span>
+                        <span className="line before"></span>
                         <h2 className="title">PRODUCT</h2>
-                        <span className="line"></span>
+                        <span className="line after"></span>
                     </div>
                     <ProductSwiper />
                     <MoreBtn children="View More" />

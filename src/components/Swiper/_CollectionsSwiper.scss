@@ -1,0 +1,57 @@
+@import "../../styles/variables";
+
+.collections_section .swiper {
+    padding-bottom: 230px !important;
+}
+.collections_section .swiper-slide {
+    width: 100% !important;
+    height: 360px !important;
+}
+.collections_section .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 10px !important;
+    background: rgba(186, 76, 39, 0.8) !important;
+}
+.collections_section .swiper-pagination-bullet-active {
+    background: $brown !important;
+}
+
+@media (min-width: 768px) {
+    .collections_section .swiper {
+        padding-bottom: 170px !important;
+    }
+
+    .collections_section .swiper-wrapper {
+        align-items: center !important;
+    }
+    .collections_section .swiper-slide:first-child,
+    .collections_section .swiper-slide:last-child {
+        position: relative;
+        width: 22.455% !important;
+        height: 400px !important;
+    }
+    .collections_section .swiper-slide:first-child::before,
+    .collections_section .swiper-slide:last-child::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    .collections_section .swiper-slide:nth-child(2) {
+        width: 48.802% !important;
+        height: 500px !important;
+    }
+    .collections_section .swiper-slide:first-child div b,
+    .collections_section .swiper-slide:first-child div p,
+    .collections_section .swiper-slide:first-child div a,
+    .collections_section .swiper-slide:last-child div b,
+    .collections_section .swiper-slide:last-child div p,
+    .collections_section .swiper-slide:last-child div a {
+        display: none !important;
+    }
+}

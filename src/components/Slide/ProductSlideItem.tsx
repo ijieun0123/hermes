@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { getImageUrl } from "../../utils/utils.ts";
 
 interface ProductSlideItemProps {
     imageSrc: string;
@@ -10,12 +11,15 @@ const SlideItem = styled.a`
     display: inline-block;
     width: 100%;
     height: 334px;
+
+    @media (min-width: 768px) {
+    }
 `;
 
-const ProductImg = styled.div`
+const ProductImg = styled.div<{ $imageSrc: string }>`
     width: 100%;
     height: 100%;
-    background: url("/img/product_section_photo_1.png") no-repeat center/cover;
+    background: url(${props => props.$imageSrc}) no-repeat center/cover;
 `;
 
 const ProductName = styled.p`
@@ -28,10 +32,12 @@ const ProductName = styled.p`
     color: var(--black-color);
 `;
 
-const ProductSlideItem = ({ productName }: ProductSlideItemProps) => {
+const ProductSlideItem = ({ imageSrc, productName }: ProductSlideItemProps) => {
+    const imageUrl = getImageUrl(imageSrc);
+
     return (
-        <SlideItem>
-            <ProductImg />
+        <SlideItem href="#">
+            <ProductImg $imageSrc={imageUrl} />
             <ProductName>{productName}</ProductName>
         </SlideItem>
     );

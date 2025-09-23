@@ -100,7 +100,6 @@ main {
         }
     }
     .collections_section {
-        display: none;
         .container {
             .title_box {
                 .line.before {
@@ -312,6 +311,23 @@ main {
                 }
                 a.more_btn {
                 }
+            }
+        }
+    }
+    .product_section {
+        .container {
+            .title_box {
+                .line.before {
+                }
+                .title {
+                }
+                .line.after {
+                }
+            }
+            .product_swiper {
+            }
+            .more_btn {
+                margin-top: 50px;
             }
         }
     }
@@ -582,6 +598,22 @@ main {
                 }
             }
         }
+        .product_section {
+            .container {
+                .title_box {
+                    .line.before {
+                    }
+                    .title {
+                    }
+                    .line.after {
+                    }
+                }
+                .product_swiper {
+                }
+                .more_btn {
+                }
+            }
+        }
     }
 }
 
@@ -842,10 +874,27 @@ main {
                 }
             }
         }
+        .product_section {
+            .container {
+                .title_box {
+                    .line.before {
+                    }
+                    .title {
+                    }
+                    .line.after {
+                    }
+                }
+                .product_swiper {
+                }
+                .more_btn {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
     main {
         .intro_section {
             padding: 410px 0 416px;
@@ -1093,6 +1142,23 @@ main {
                     }
                     a.more_btn {
                     }
+                }
+            }
+        }
+        .product_section {
+            .container {
+                .title_box {
+                    .line.before {
+                    }
+                    .title {
+                    }
+                    .line.after {
+                    }
+                }
+                .product_swiper {
+                }
+                .more_btn {
+                    display: flex;
                 }
             }
         }
