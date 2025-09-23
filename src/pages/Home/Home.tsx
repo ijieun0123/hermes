@@ -149,9 +149,9 @@ const Home = () => {
             <section className="heart_section">
                 <div className="container">
                     <span className="hermes">Hermes</span>
-                    <span className="created_by_the_heart">
+                    <h2 className="created_by_the_heart">
                         created by the heart
-                    </span>
+                    </h2>
                     <p>
                         모든 작품은 스케치에서 시작됩니다. <br />
                         에르메스의 장인정신은 작은 <br />
