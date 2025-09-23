@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// import { getImageUrl } from "../../utils/utils.ts";
 
 interface ProductSlideItemProps {
     imageSrc: string;
@@ -33,8 +32,6 @@ const ProductName = styled.p`
 `;
 
 const ProductSlideItem = ({ imageSrc, productName }: ProductSlideItemProps) => {
-    // const imageUrl = getImageUrl(imageSrc);
-
     return (
         <SlideItem href="#">
             <ProductImg $imageSrc={imageSrc} />
