@@ -13,7 +13,7 @@ const Home = () => {
                     <div className="text_box">
                         <div className="title_box">
                             <h2 className="sr_only">visual</h2>
-                            <span>since 1837</span>
+                            <span>SINCE 1837</span>
                             <h3>HERMES</h3>
                         </div>
                         <a href="#" className="get_started_btn">
@@ -21,7 +21,6 @@ const Home = () => {
                             <Arrow width={117} />
                         </a>
                     </div>
-                    <div className="bg_photo"></div>
                 </div>
             </section>
             <section className="story_section">
@@ -178,7 +177,7 @@ const Home = () => {
                         <p className="paragraph">
                             1837년 설립된 가족 경영 기반의 독립적 장인 기업
                             에르메스는 수선을 통해 다음 세대로 대물림될 수 있는
-                            <br className="hide_on_mobile" />
+                            <br className="show_on_tablet_desktop" />
                             아름답고 기능적인 오브제를 선보이고 있습니다. 오랜
                             세월 전해 내려온 장인의 특별한 노하우와
                             <br className="show_on_tablet_desktop" />

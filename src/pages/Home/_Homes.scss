@@ -4,6 +4,7 @@
 main {
     .intro_section {
         margin: 0;
+        margin-top: 75px;
         padding: 378px 0 37px;
         background: url("/img/intro_section_photo.png") no-repeat center/cover;
 
@@ -14,11 +15,14 @@ main {
                 @include flex_column;
                 gap: 42px;
                 width: 76.944%;
-                padding: 15px 8.333% 15px 5.555%;
+                padding: 20px 8.333% 15px 5.555%;
                 margin-left: auto;
                 background: rgba(255, 255, 255, 0.9);
 
                 .title_box {
+                    margin-bottom: 0;
+                    text-align: left;
+
                     span {
                         display: inline-block;
                         padding-left: 10px;
@@ -28,7 +32,9 @@ main {
                         color: $black;
                     }
                     h3 {
+                        margin-top: 3px;
                         font-family: $font_family_english_hero;
+                        font-weight: 300;
                         font-size: 50px;
                         color: $black;
                     }
@@ -90,9 +96,11 @@ main {
                 padding: 130px 0 70px;
 
                 .title {
+                    font-size: 50px;
+                    letter-spacing: -0.05em;
                 }
                 .paragraph.paragraph1 {
-                    margin: 40px 0 20px;
+                    margin: 20px 0;
                 }
                 .paragraph {
                 }
@@ -261,14 +269,14 @@ main {
                 font-weight: $font_weight_bold;
                 font-size: 18px;
                 color: $ivory;
-                line-height: 1.333rem;
+                line-height: 1.433rem;
             }
             .bg_box {
                 .bg_photo_woman {
                     position: absolute;
-                    top: 50%;
+                    top: 170px;
                     left: 50%;
-                    transform: translate(-50%, -50%);
+                    transform: translateX(-50%);
                     width: 100%;
                     height: 380px;
                     background: url("/img/heart_section_photo_1.png") no-repeat
@@ -337,6 +345,8 @@ main {
     main {
         .intro_section {
             padding: 184px 0 311px;
+            background: url("/hermes/img/intro_section_photo.png") no-repeat 80%
+                center/ cover;
 
             .container {
                 width: 86.979%;
@@ -380,7 +390,7 @@ main {
             .bg_photo {
                 top: 166px;
                 right: auto;
-                left: 0;
+                left: 9.31%;
                 width: 78.125%;
                 height: 410px;
             }
@@ -393,12 +403,13 @@ main {
                 .text_box {
                     width: 82.222%;
                     margin: 0 auto;
-                    padding: 270px 0 100px;
+                    padding: 240px 0 100px;
 
                     .title {
                         font-size: 80px;
                     }
                     .paragraph.paragraph1 {
+                        margin: 30px 0 20px;
                     }
                     .paragraph {
                     }
@@ -433,8 +444,8 @@ main {
                                 font-size: 16px;
                             }
                             .title {
-                                margin-top: 12px;
-                                margin-bottom: 30px;
+                                margin-top: 0px;
+                                margin-bottom: 20px;
                             }
                             .paragraph {
                             }
@@ -452,7 +463,7 @@ main {
                                 width: 73.353%;
                                 height: 336px;
                                 margin-left: 12.239%;
-                                margin-top: -150px;
+                                margin-top: -167px;
                             }
                             .bg_photo.third {
                             }
@@ -530,8 +541,9 @@ main {
 
             .container {
                 .hermes {
-                    top: 85px;
+                    top: 95px;
                     font-size: 150px;
+                    z-index: 2;
                 }
                 .created_by_the_heart {
                     position: absolute;
@@ -539,10 +551,14 @@ main {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     display: block;
+                    width: 110%;
                     color: rgba(246, 241, 235, 0.8);
                     font-size: 60px;
                     font-family: $font_family_english_title_btn;
                     letter-spacing: -0.05em;
+                    z-index: 2;
+                    text-transform: uppercase;
+                    text-align: center;
                 }
                 p {
                     left: 0;
@@ -558,6 +574,7 @@ main {
                     justify-content: center;
                     transform: translate(-50%, -50%);
                     width: 87.179%;
+                    z-index: 1;
 
                     .bg_photo_woman {
                         position: static;
@@ -582,7 +599,7 @@ main {
                         font-size: 80px;
                     }
                     .title {
-                        margin: 0;
+                        margin: -20px 0 20px;
                         font-size: 120px;
                     }
                 }
@@ -621,7 +638,7 @@ main {
     main {
         .intro_section {
             position: relative;
-            padding: 411px 0 472px;
+            padding: 310px 0 446px;
             background: none;
 
             .bg_photo {
@@ -639,7 +656,7 @@ main {
 
                 .text_box {
                     position: relative;
-                    width: 42.089%;
+                    width: 46.443%;
                     z-index: 2;
 
                     .title_box {
@@ -662,12 +679,10 @@ main {
             }
         }
         .story_section {
-            display: flex;
+            @include flex_column;
 
             .brown_box {
                 width: 79.882%;
-                margin-right: auto;
-                margin-left: 0;
             }
             .bg_photo {
                 top: 228px;
@@ -682,14 +697,14 @@ main {
             }
             .gray_box {
                 .text_box {
-                    width: 55.664%;
-                    padding: 350px 0 150px 12.695%;
+                    width: 68.421%;
+                    padding: 320px 0 150px 12.695%;
                     margin: 0;
 
                     .title {
                     }
                     .paragraph.paragraph1 {
-                        margin: 60px 0 30px;
+                        margin: 50px 0 30px;
                     }
                     .paragraph {
                     }
@@ -723,8 +738,8 @@ main {
                             .caption {
                             }
                             .title {
-                                margin-top: 20px;
-                                margin-bottom: 40px;
+                                margin-top: 15px;
+                                margin-bottom: 30px;
                             }
                             .paragraph {
                             }
@@ -742,7 +757,7 @@ main {
                                 width: 73.206%;
                                 height: 410px;
                                 margin-left: auto;
-                                margin-top: -60px;
+                                margin-top: -100px;
                             }
                             .bg_photo.third {
                             }
@@ -858,7 +873,7 @@ main {
                         font-size: 100px;
                     }
                     .title {
-                        margin-top: -15px;
+                        margin-top: -25px;
                         margin-bottom: 20px;
                         font-size: 120px;
                     }
@@ -897,7 +912,8 @@ main {
 @media (min-width: 1440px) {
     main {
         .intro_section {
-            padding: 410px 0 416px;
+            margin-top: 97px;
+            padding: 305px 0 416px;
 
             .bg_photo {
                 width: 68.125%; // 1308px
@@ -910,6 +926,8 @@ main {
                     width: 765px;
 
                     .title_box {
+                        display: block;
+
                         span {
                             padding-left: 50px;
                         }
@@ -926,8 +944,8 @@ main {
         }
         .story_section {
             .brown_box {
-                left: 0;
-                right: auto;
+                margin-right: auto;
+                margin-left: 0;
                 width: 38.229%;
                 height: 910px;
             }
@@ -941,7 +959,7 @@ main {
             .artisanship {
                 top: 463px;
                 right: auto;
-                left: 0.645%;
+                left: -2.355%;
                 transform: rotate(-90deg);
             }
             .gray_box {
@@ -951,7 +969,7 @@ main {
 
                 .text_box {
                     width: 76.728%;
-                    padding: 316px 0 233px 28.667%;
+                    padding: 316px 0 233px 340px;
                     margin: 0;
 
                     .title {
@@ -1001,8 +1019,8 @@ main {
                                 height: 397px;
                             }
                             .bg_photo.second {
-                                width: 392px;
-                                height: 420px;
+                                width: 436px;
+                                height: 336px;
                                 margin-left: auto;
                                 margin-top: -270px;
                                 background: url("/img/introduce_section_entrepreneurship_3.png")
@@ -1010,10 +1028,10 @@ main {
                             }
                             .bg_photo.third {
                                 display: block;
-                                width: 436px;
-                                height: 336px;
-                                margin-top: -250px;
-                                margin-left: 100px;
+                                width: 392px;
+                                height: 420px;
+                                margin-top: -170px;
+                                margin-left: 150px;
                                 background: url("/img/introduce_section_entrepreneurship_2.png")
                                     no-repeat center/cover;
                             }
