@@ -1,25 +1,36 @@
+import "./_Footer.scss";
+
 const Footer = () => {
     return (
         <footer>
             <div className="container">
                 <div className="logo_sns_box">
                     <a href="#">
-                        <img src="" alt="미니 로고" />
+                        <img src="/hermes/img/logo.png" alt="에르메스 로고" />
                     </a>
                     <ul className="sns">
                         <li>
                             <a href="#" target="_blank" title="새창">
-                                <img src="" alt="유투브" />
+                                <img
+                                    src="/hermes/img/footer_sns_youtube.png"
+                                    alt="유투브"
+                                />
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank" title="새창">
-                                <img src="" alt="인스타그램" />
+                                <img
+                                    src="/hermes/img/footer_sns_instagram.png"
+                                    alt="인스타그램"
+                                />
                             </a>
                         </li>
                         <li>
                             <a href="#" target="_blank" title="새창">
-                                <img src="" alt="페이스북" />
+                                <img
+                                    src="/hermes/img/footer_sns_facebook.png"
+                                    alt="페이스북"
+                                />
                             </a>
                         </li>
                     </ul>
