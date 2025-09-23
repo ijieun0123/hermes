@@ -47,7 +47,11 @@ main {
                     color: $black;
 
                     .right_arrow {
+                        width: 113px;
+                        height: 12px;
                         align-self: flex-end;
+                        background: url("/img/intro_section_arrow_mobile.svg")
+                            no-repeat center/cover;
                     }
                 }
             }
@@ -374,6 +378,10 @@ main {
                         letter-spacing: 0.25em;
 
                         .right_arrow {
+                            width: 170px;
+                            height: 12px;
+                            background: url("/img/intro_section_arrow.svg")
+                                no-repeat center/cover;
                         }
                     }
                 }

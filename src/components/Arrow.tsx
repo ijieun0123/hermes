@@ -1,13 +1,9 @@
-interface ArrowProps {
-    width: number;
-}
-
-const Arrow = ({ width }: ArrowProps) => {
+const Arrow = () => {
     return (
         <svg
-            width={width}
+            width="170"
             height="12"
-            viewBox="0 0 117 12"
+            viewBox="0 0 170 12"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="right_arrow"

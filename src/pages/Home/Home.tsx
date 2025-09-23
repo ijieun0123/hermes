@@ -18,7 +18,7 @@ const Home = () => {
                         </div>
                         <a href="#" className="get_started_btn">
                             GET STARTED
-                            <Arrow width={117} />
+                            <div className="right_arrow"></div>
                         </a>
                     </div>
                 </div>
