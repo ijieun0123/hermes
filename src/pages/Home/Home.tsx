@@ -1,5 +1,4 @@
 import "./_Homes.scss";
-import Arrow from "../../components/Arrow";
 import MoreBtn from "../../components/Button/MoreBtn";
 import ProductSwiper from "../../components/Swiper/ProductSwiper";
 import CollectionsSwiper from "../../components/Swiper/CollectionsSwiper";
