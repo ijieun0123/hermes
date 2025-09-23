@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { getImageUrl } from "../../utils/utils.ts";
+// import { getImageUrl } from "../../utils/utils.ts";
 
 interface CollectionsSlideItemProps {
     imageSrc: string;
@@ -70,11 +70,11 @@ const CollectionsSlideItem = ({
     description,
     button,
 }: CollectionsSlideItemProps) => {
-    const imageUrl = getImageUrl(imageSrc);
+    // const imageUrl = getImageUrl(imageSrc);
 
     return (
         <SlideItem>
-            <CollectionsImg $imageSrc={imageUrl}></CollectionsImg>
+            <CollectionsImg $imageSrc={imageSrc}></CollectionsImg>
             <CollectionsTitle>{title}</CollectionsTitle>
             <CollectionsDescription>{description}</CollectionsDescription>
             <CollectionsBtn href="#">{button}</CollectionsBtn>
