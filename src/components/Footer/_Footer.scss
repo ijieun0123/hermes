@@ -129,8 +129,6 @@ footer {
                     }
                 }
                 .sns {
-                    gap: 40px;
-
                     li {
                         a {
                             img {
@@ -161,6 +159,7 @@ footer {
             .logo_sns_box {
                 a {
                     img {
+                        width: 120px;
                     }
                 }
                 .sns {

@@ -4,7 +4,7 @@
     padding-bottom: 230px !important;
 }
 .collections_section .swiper-slide {
-    width: 100% !important;
+    // width: 100% !important;
     height: 360px !important;
 }
 .collections_section .swiper-pagination-bullet {
@@ -18,21 +18,17 @@
 }
 
 @media (min-width: 768px) {
-    .collections_section .swiper {
-        padding-bottom: 170px !important;
-    }
-
     .collections_section .swiper-wrapper {
         align-items: center !important;
     }
-    .collections_section .swiper-slide:first-child,
-    .collections_section .swiper-slide:last-child {
+    .collections_section .swiper-slide-prev,
+    .collections_section .swiper-slide-next {
         position: relative;
         width: 22.455% !important;
         height: 400px !important;
     }
-    .collections_section .swiper-slide:first-child::before,
-    .collections_section .swiper-slide:last-child::before {
+    .collections_section .swiper-slide-prev::before,
+    .collections_section .swiper-slide-next::before {
         content: "";
         position: absolute;
         top: 0;
@@ -42,16 +38,43 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1;
     }
-    .collections_section .swiper-slide:nth-child(2) {
+    .collections_section .swiper-slide-active {
         width: 48.802% !important;
         height: 500px !important;
     }
-    .collections_section .swiper-slide:first-child div b,
-    .collections_section .swiper-slide:first-child div p,
-    .collections_section .swiper-slide:first-child div a,
-    .collections_section .swiper-slide:last-child div b,
-    .collections_section .swiper-slide:last-child div p,
-    .collections_section .swiper-slide:last-child div a {
+    .collections_section .swiper-slide-prev div b,
+    .collections_section .swiper-slide-prev div p,
+    .collections_section .swiper-slide-prev div a,
+    .collections_section .swiper-slide-next div b,
+    .collections_section .swiper-slide-next div p,
+    .collections_section .swiper-slide-next div a {
         display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .collections_section .swiper-slide-prev,
+    .collections_section .swiper-slide-next {
+        width: 23.383% !important;
+        height: 550px !important;
+    }
+    .collections_section .swiper-slide-active {
+        width: 48.922% !important;
+        height: 625px !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .collections_section .swiper {
+        // padding-bottom: 230px !important;
+    }
+    .collections_section .swiper-slide-prev,
+    .collections_section .swiper-slide-next {
+        width: 23.925% !important;
+        height: 550px !important;
+    }
+    .collections_section .swiper-slide-active {
+        width: 42.979% !important;
+        height: 625px !important;
     }
 }

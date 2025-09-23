@@ -76,7 +76,9 @@ const CollectionsSlideItem = ({
         <SlideItem>
             <CollectionsImg $imageSrc={imageSrc}></CollectionsImg>
             <CollectionsTitle>{title}</CollectionsTitle>
-            <CollectionsDescription>{description}</CollectionsDescription>
+            <CollectionsDescription
+                dangerouslySetInnerHTML={{ __html: description }}
+            ></CollectionsDescription>
             <CollectionsBtn href="#">{button}</CollectionsBtn>
         </SlideItem>
     );
