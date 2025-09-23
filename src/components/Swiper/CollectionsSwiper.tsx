@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import type { Swiper as SwiperType } from "swiper";
 import "swiper/swiper-bundle.css";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import CollectionsSlideItem from "../Slide/CollectionsSlideItem";
