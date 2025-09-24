@@ -58,6 +58,9 @@
 }
 
 @media (min-width: 1024px) {
+    .collections_section .swiper {
+        padding-bottom: 250px !important;
+    }
     .collections_section .swiper-slide-prev,
     .collections_section .swiper-slide-next {
         width: 23.383% !important;

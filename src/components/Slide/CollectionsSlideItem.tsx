@@ -33,6 +33,10 @@ const CollectionsTitle = styled.b`
     @media (min-width: 768px) {
         font-size: 18px;
     }
+
+    @media (min-width: 1024px) {
+        margin: 50px 0 15px;
+    }
 `;
 
 const CollectionsDescription = styled.p`
@@ -63,6 +67,10 @@ const CollectionsBtn = styled.a`
     @media (min-width: 768px) {
         padding: 5px 6px;
         font-size: 18px;
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: 60px;
     }
 `;
 
