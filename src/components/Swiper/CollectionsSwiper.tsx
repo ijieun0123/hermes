@@ -68,7 +68,7 @@ const CollectionsSwiper = () => {
                 768: {
                     slidesPerView: 3,
                     spaceBetween: 20,
-                    Pagination: false,
+                    pagination: false,
                 },
                 1440: {
                     slidesPerView: 3,
