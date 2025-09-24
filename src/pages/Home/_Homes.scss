@@ -71,7 +71,7 @@ main {
             position: absolute;
             top: 111px;
             right: 0%;
-            width: 91.388%;
+            width: 90.388%;
             height: 253px;
             background: url("/img/story_section_photo.png") no-repeat center 20% /
                 cover;
@@ -83,10 +83,10 @@ main {
         .artisanship {
             position: absolute;
             top: 70px;
-            right: 5.555%;
+            right: 5%;
             font-size: 50px;
             font-family: $font_family_english_title_btn;
-            letter-spacing: -0.05em;
+            letter-spacing: -0.07em;
             z-index: 3;
             color: rgba(246, 241, 235, 0.7);
             text-transform: uppercase;
@@ -97,11 +97,12 @@ main {
             .text_box {
                 width: 82.222%;
                 margin: 0 auto;
-                padding: 130px 0 70px;
+                padding: 118px 0 70px;
 
                 .title {
                     font-size: 50px;
                     letter-spacing: -0.05em;
+                    line-height: auto;
                 }
                 .paragraph.paragraph1 {
                     margin: 20px 0;
@@ -256,7 +257,7 @@ main {
                 left: 0;
                 bottom: 70px;
                 font-family: $font_family_korean;
-                font-weight: $font_weight_bold;
+                font-weight: $font_weight_medium;
                 font-size: 18px;
                 color: $ivory;
                 line-height: 1.433rem;
@@ -291,7 +292,7 @@ main {
                     letter-spacing: -0.05em;
                 }
                 .title {
-                    margin: 5px 0 15px;
+                    margin: -5px 0 5px;
                     font-family: $font_family_english_script;
                     font-size: 60px;
                     color: $brown;
