@@ -43,6 +43,8 @@ const CollectionsDescription = styled.p`
     word-break: keep-all;
 
     @media (min-width: 768px) {
+        width: 200%;
+        margin-left: -50%;
         font-size: 18px;
         line-height: 1.333rem;
     }

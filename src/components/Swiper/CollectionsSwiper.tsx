@@ -40,7 +40,7 @@ const slideData = [
         imageSrc: "/hermes/img/collections_section_photo_5.webp",
         title: "남성미의 시너지",
         description:
-            "과장을 걷어낸 멋, 주얼리와 자연스럽게 <br/>어우러진 모자가 남성적인 매력을 완성합니다.",
+            "과장을 걷어낸 멋, 주얼리와 자연스럽게 어우러진 모자가 남성적인 매력을 완성합니다.",
         button: "멋을 아는 이유",
     },
 ];
@@ -68,6 +68,7 @@ const CollectionsSwiper = () => {
                 768: {
                     slidesPerView: 3,
                     spaceBetween: 20,
+                    Pagination: false,
                 },
                 1440: {
                     slidesPerView: 3,
