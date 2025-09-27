@@ -60,6 +60,8 @@ const ProductSwiper = () => {
             spaceBetween={50}
             slidesPerView={1}
             pagination={{ clickable: true }}
+            observer={true}
+            observeParents={true}
             breakpoints={{
                 768: {
                     slidesPerView: 8,

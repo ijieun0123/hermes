@@ -195,8 +195,11 @@ header {
                     li {
                         a {
                             width: 90.625%;
+                            text-align: center;
 
-                            &:hover {
+                            &:after {
+                                left: 50%;
+                                transform: translateX(-50%);
                             }
                         }
                     }
