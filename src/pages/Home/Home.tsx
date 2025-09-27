@@ -7,15 +7,29 @@ const Home = () => {
     return (
         <main>
             <section className="intro_section">
-                <div className="bg_photo"></div>
+                <div
+                    className="bg_photo"
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                    data-aos-duration="2000"
+                ></div>
                 <div className="container">
                     <div className="text_box">
-                        <div className="title_box">
+                        <div
+                            className="title_box"
+                            data-aos="fade-right"
+                            data-aos-delay="0"
+                        >
                             <h2 className="sr_only">visual</h2>
                             <span>SINCE 1837</span>
                             <h3>HERMES</h3>
                         </div>
-                        <a href="#" className="get_started_btn">
+                        <a
+                            href="#"
+                            className="get_started_btn"
+                            data-aos="fade-right"
+                            data-aos-delay="600"
+                        >
                             GET STARTED
                             <div className="right_arrow"></div>
                         </a>
@@ -23,11 +37,20 @@ const Home = () => {
                 </div>
             </section>
             <section className="story_section">
-                <div className="brown_box"></div>
-                <div className="bg_photo"></div>
+                <div className="brown_box" data-aos="fade-left"></div>
+                <div
+                    className="bg_photo"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                    data-aos-duration="2000"
+                ></div>
                 <span className="artisanship">Artisanship</span>
                 <div className="gray_box">
-                    <div className="text_box">
+                    <div
+                        className="text_box"
+                        data-aos="fade-left"
+                        data-aos-delay="600"
+                    >
                         <h2 className="title">Our Story</h2>
                         <p className="paragraph paragraph1">
                             에르메스는 장인 정신과 휴머니스트적 가치에
@@ -49,17 +72,20 @@ const Home = () => {
             </section>
             <section className="collections_section">
                 <div className="container">
-                    <div className="title_box">
+                    <div className="title_box" data-aos="fade-up">
                         <span className="line before"></span>
                         <h2 className="title">COLLECTIONS</h2>
                         <span className="line after"></span>
                     </div>
-                    <CollectionsSwiper />
+                    <CollectionsSwiper
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    />
                 </div>
             </section>
             <section className="introduce_section">
                 <div className="container">
-                    <div className="title_box">
+                    <div className="title_box" data-aos="fade-up">
                         <span className="line before"></span>
                         <h2 className="title">INTRODUCE HERMES</h2>
                         <span className="line after"></span>
@@ -67,11 +93,27 @@ const Home = () => {
                     <div className="img_text_box">
                         <div className="entrepreneurship_box">
                             <div className="img_box">
-                                <div className="bg_photo first"></div>
-                                <div className="bg_photo second"></div>
-                                <div className="bg_photo third"></div>
+                                <div
+                                    className="bg_photo first"
+                                    data-aos="fade"
+                                    data-aos-delay="200"
+                                ></div>
+                                <div
+                                    className="bg_photo second"
+                                    data-aos="fade"
+                                    data-aos-delay="400"
+                                ></div>
+                                <div
+                                    className="bg_photo third"
+                                    data-aos="fade"
+                                    data-aos-delay="600"
+                                ></div>
                             </div>
-                            <div className="text_box">
+                            <div
+                                className="text_box"
+                                data-aos="fade-right"
+                                data-aos-delay="800"
+                            >
                                 <span className="caption">기업가 정신</span>
                                 <h3 className="title">Entrepreneurship</h3>
                                 <p className="paragraph">
@@ -87,7 +129,11 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="freedom_box">
-                            <div className="text_box">
+                            <div
+                                className="text_box"
+                                data-aos="fade-left"
+                                data-aos-delay="0"
+                            >
                                 <span className="caption">창작의 자유</span>
                                 <h3 className="title">Creative Freedom</h3>
                                 <p className="paragraph">
@@ -101,15 +147,27 @@ const Home = () => {
                                     있는 오브제들을 디자인합니다.
                                 </p>
                             </div>
-                            <div className="img_box">
+                            <div
+                                className="img_box"
+                                data-aos="fade-right"
+                                data-aos-delay="0"
+                            >
                                 <div className="bg_photo"></div>
                             </div>
                         </div>
                         <div className="brand_box">
-                            <div className="img_box">
+                            <div
+                                className="img_box"
+                                data-aos="fade-left"
+                                data-aos-delay="0"
+                            >
                                 <div className="bg_photo"></div>
                             </div>
-                            <div className="text_box">
+                            <div
+                                className="text_box"
+                                data-aos="fade-right"
+                                data-aos-delay="0"
+                            >
                                 <span className="caption">브랜드</span>
                                 <h3 className="title">Brand</h3>
                                 <p className="paragraph">
@@ -126,7 +184,11 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="network">
-                            <div className="text_box">
+                            <div
+                                className="text_box"
+                                data-aos="fade-left"
+                                data-aos-delay="0"
+                            >
                                 <span className="caption">네트워크</span>
                                 <h3 className="title">Network</h3>
                                 <p className="paragraph">
@@ -139,7 +201,11 @@ const Home = () => {
                                     특별한 경험을 제공하고 있습니다.
                                 </p>
                             </div>
-                            <div className="img_box">
+                            <div
+                                className="img_box"
+                                data-aos="fade-right"
+                                data-aos-delay="0"
+                            >
                                 <div className="bg_photo"></div>
                             </div>
                         </div>
@@ -148,11 +214,18 @@ const Home = () => {
             </section>
             <section className="heart_section">
                 <div className="container">
-                    <span className="hermes">Hermes</span>
-                    <h2 className="created_by_the_heart">
+                    <span className="hermes" data-aos="fade-left">
+                        Hermes
+                    </span>
+                    <h2
+                        className="created_by_the_heart"
+                        data-aos="fade"
+                        data-aos-delay="800"
+                        data-aos-duration="3000"
+                    >
                         created by the heart
                     </h2>
-                    <p>
+                    <p data-aos="fade-left" data-aos-delay="600">
                         모든 작품은 스케치에서 시작됩니다. <br />
                         에르메스의 장인정신은 작은 <br />
                         선에서부터 이야기를 만들어냅니다.
@@ -160,18 +233,36 @@ const Home = () => {
                         <br /> 영원한 가치를 지닙니다.
                     </p>
                     <div className="bg_box">
-                        <div className="bg_photo_woman"></div>
-                        <div className="bg_photo_man"></div>
+                        <div
+                            className="bg_photo_woman"
+                            data-aos="fade-left"
+                            data-aos-delay="200"
+                        ></div>
+                        <div
+                            className="bg_photo_man"
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                        ></div>
                     </div>
                 </div>
             </section>
             <section className="development_section">
                 <div className="container">
                     <div className="title_box">
-                        <span>SUSTAINALBE</span>
-                        <h2 className="title">Development</h2>
+                        <span data-aos="fade-up">SUSTAINALBE</span>
+                        <h2
+                            className="title"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                        >
+                            Development
+                        </h2>
                     </div>
-                    <div className="text_box">
+                    <div
+                        className="text_box"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                    >
                         <b>지속 가능한 오브제, 고용, 전략, 협업</b>
                         <p className="paragraph">
                             1837년 설립된 가족 경영 기반의 독립적 장인 기업
@@ -198,13 +289,17 @@ const Home = () => {
             </section>
             <section className="product_section">
                 <div className="container">
-                    <div className="title_box">
+                    <div className="title_box" data-aos="fade-up">
                         <span className="line before"></span>
                         <h2 className="title">PRODUCT</h2>
                         <span className="line after"></span>
                     </div>
-                    <ProductSwiper />
-                    <MoreBtn children="View More" />
+                    <ProductSwiper data-aos="fade-up" data-aos-delay="300" />
+                    <MoreBtn
+                        children="View More"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                    />
                 </div>
             </section>
         </main>

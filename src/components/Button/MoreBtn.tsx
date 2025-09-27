@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 interface MoreBtnProps {
     children: React.ReactNode;
+    "data-aos"?: string;
+    "data-aos-delay"?: string;
 }
 
 const StyledButton = styled.a`
@@ -19,9 +21,9 @@ const StyledButton = styled.a`
     }
 `;
 
-const MoreBtn = ({ children }: MoreBtnProps) => {
+const MoreBtn = ({ children, ...rest }: MoreBtnProps) => {
     return (
-        <StyledButton href="#" className="more_btn">
+        <StyledButton href="#" className="more_btn" {...rest}>
             {children}
         </StyledButton>
     );

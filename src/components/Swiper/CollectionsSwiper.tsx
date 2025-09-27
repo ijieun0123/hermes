@@ -4,6 +4,11 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 import CollectionsSlideItem from "../Slide/CollectionsSlideItem";
 import "./_CollectionsSwiper.scss";
 
+interface CollectionsSwiperProps {
+    "data-aos"?: string;
+    "data-aos-delay"?: string;
+}
+
 const slideData = [
     {
         id: 1,
@@ -45,7 +50,7 @@ const slideData = [
     },
 ];
 
-const CollectionsSwiper = () => {
+const CollectionsSwiper = ({ ...rest }: CollectionsSwiperProps) => {
     return (
         <Swiper
             effect={"coverflow"}
@@ -75,6 +80,7 @@ const CollectionsSwiper = () => {
                     spaceBetween: 64,
                 },
             }}
+            {...rest}
         >
             {slideData.map(slide => {
                 return (

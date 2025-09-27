@@ -4,6 +4,11 @@ import { Pagination } from "swiper/modules";
 import ProductSlideItem from "../Slide/ProductSlideItem";
 import "./_ProductSwiper.scss";
 
+interface ProductSwiperProps {
+    "data-aos"?: string;
+    "data-aos-delay"?: string;
+}
+
 const slideData = [
     {
         id: 1,
@@ -52,7 +57,7 @@ const slideData = [
     },
 ];
 
-const ProductSwiper = () => {
+const ProductSwiper = ({ ...rest }: ProductSwiperProps) => {
     return (
         <Swiper
             className="product_swiper"
@@ -69,6 +74,7 @@ const ProductSwiper = () => {
                     pagination: false,
                 },
             }}
+            {...rest}
         >
             {slideData.map(slide => {
                 return (
