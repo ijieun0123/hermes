@@ -11,7 +11,7 @@ const Home = () => {
                     className="bg_photo"
                     data-aos="fade-right"
                     data-aos-delay="300"
-                    data-aos-duration="2000"
+                    data-aos-duration=""
                 ></div>
                 <div className="container">
                     <div className="text_box">
