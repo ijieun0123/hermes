@@ -96,23 +96,23 @@ const Home = () => {
                                 <div
                                     className="bg_photo first"
                                     data-aos="fade"
-                                    data-aos-delay="200"
+                                    data-aos-delay="0"
                                 ></div>
                                 <div
                                     className="bg_photo second"
                                     data-aos="fade"
-                                    data-aos-delay="400"
+                                    data-aos-delay="200"
                                 ></div>
                                 <div
                                     className="bg_photo third"
                                     data-aos="fade"
-                                    data-aos-delay="600"
+                                    data-aos-delay="400"
                                 ></div>
                             </div>
                             <div
                                 className="text_box"
                                 data-aos="fade-right"
-                                data-aos-delay="800"
+                                data-aos-delay="600"
                             >
                                 <span className="caption">기업가 정신</span>
                                 <h3 className="title">Entrepreneurship</h3>
