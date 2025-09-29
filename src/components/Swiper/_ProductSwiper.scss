@@ -7,6 +7,7 @@
     display: none !important;
 }
 .product_section .swiper-pagination {
+    display: block !important;
     bottom: 0 !important;
 }
 .product_section .swiper-pagination-bullet {
@@ -34,6 +35,9 @@
     .product_section .swiper-slide:nth-child(7),
     .product_section .swiper-slide:nth-child(8) {
         margin-bottom: 0 !important;
+    }
+    .product_section .swiper-pagination {
+        display: none !important;
     }
 }
 

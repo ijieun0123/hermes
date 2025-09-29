@@ -65,13 +65,10 @@ const ProductSwiper = ({ ...rest }: ProductSwiperProps) => {
             spaceBetween={50}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            observer={true}
-            observeParents={true}
             breakpoints={{
                 768: {
                     slidesPerView: 8,
                     spaceBetween: 0,
-                    pagination: false,
                 },
             }}
             {...rest}
