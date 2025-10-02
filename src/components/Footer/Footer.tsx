@@ -6,7 +6,10 @@ const Footer = () => {
             <div className="container">
                 <div className="logo_sns_box">
                     <a href="#">
-                        <img src="/hermes/img/logo.png" alt="에르메스 로고" />
+                        <img
+                            src="/hermes/img/footer_logo.png"
+                            alt="에르메스 로고"
+                        />
                     </a>
                     <ul className="sns">
                         <li>

@@ -15,7 +15,10 @@ const Header = () => {
             <div className="container">
                 <h1 className="logo">
                     <a href="#">
-                        <img src="/hermes/img/logo.png" alt="에르메스 로고" />
+                        <img
+                            src="/hermes/img/header_logo.png"
+                            alt="에르메스 로고"
+                        />
                     </a>
                 </h1>
                 <button
