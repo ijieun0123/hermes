@@ -10,7 +10,7 @@ const Home = () => {
                 <div
                     className="bg_photo"
                     data-aos="fade-right"
-                    data-aos-delay="300"
+                    data-aos-delay="200"
                     data-aos-duration=""
                 ></div>
                 <div className="container">
@@ -28,7 +28,7 @@ const Home = () => {
                             href="#"
                             className="get_started_btn"
                             data-aos="fade-right"
-                            data-aos-delay="600"
+                            data-aos-delay="400"
                         >
                             GET STARTED
                             <div className="right_arrow"></div>
@@ -41,15 +41,15 @@ const Home = () => {
                 <div
                     className="bg_photo"
                     data-aos="fade-left"
-                    data-aos-delay="300"
-                    data-aos-duration="2000"
+                    data-aos-delay="200"
+                    data-aos-duration="1500"
                 ></div>
                 <span className="artisanship">Artisanship</span>
                 <div className="gray_box">
                     <div
                         className="text_box"
                         data-aos="fade-left"
-                        data-aos-delay="600"
+                        data-aos-delay="400"
                     >
                         <h2 className="title">Our Story</h2>
                         <p className="paragraph paragraph1">
@@ -79,7 +79,7 @@ const Home = () => {
                     </div>
                     <CollectionsSwiper
                         data-aos="fade-up"
-                        data-aos-delay="300"
+                        data-aos-delay="200"
                     />
                 </div>
             </section>
@@ -220,12 +220,12 @@ const Home = () => {
                     <h2
                         className="created_by_the_heart"
                         data-aos="fade"
-                        data-aos-delay="800"
-                        data-aos-duration="3000"
+                        data-aos-delay="400"
+                        data-aos-duration="1500"
                     >
                         created by the heart
                     </h2>
-                    <p data-aos="fade-left" data-aos-delay="600">
+                    <p data-aos="fade-left" data-aos-delay="300">
                         모든 작품은 스케치에서 시작됩니다. <br />
                         에르메스의 장인정신은 작은 <br />
                         선에서부터 이야기를 만들어냅니다.
@@ -236,12 +236,12 @@ const Home = () => {
                         <div
                             className="bg_photo_woman"
                             data-aos="fade-left"
-                            data-aos-delay="200"
+                            data-aos-delay="100"
                         ></div>
                         <div
                             className="bg_photo_man"
                             data-aos="fade-left"
-                            data-aos-delay="400"
+                            data-aos-delay="200"
                         ></div>
                     </div>
                 </div>
@@ -253,7 +253,7 @@ const Home = () => {
                         <h2
                             className="title"
                             data-aos="fade-up"
-                            data-aos-delay="300"
+                            data-aos-delay="200"
                         >
                             Development
                         </h2>
@@ -261,7 +261,7 @@ const Home = () => {
                     <div
                         className="text_box"
                         data-aos="fade-up"
-                        data-aos-delay="600"
+                        data-aos-delay="400"
                     >
                         <b>지속 가능한 오브제, 고용, 전략, 협업</b>
                         <p className="paragraph">
@@ -294,11 +294,11 @@ const Home = () => {
                         <h2 className="title">PRODUCT</h2>
                         <span className="line after"></span>
                     </div>
-                    <ProductSwiper data-aos="fade-up" data-aos-delay="300" />
+                    <ProductSwiper data-aos="fade-up" data-aos-delay="200" />
                     <MoreBtn
                         children="View More"
                         data-aos="fade-up"
-                        data-aos-delay="600"
+                        data-aos-delay="300"
                     />
                 </div>
             </section>
